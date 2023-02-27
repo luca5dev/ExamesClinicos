@@ -9,7 +9,7 @@ public class Paciente {
     private int codigo;
     private String nome,endereco,CEP,telefone,RG,CPF;
     private Date dataNasciento;
-    private Cidade cidade new Cidade();
+    private Cidade cidade = new Cidade();
 
     public int getCodigo() {
         return codigo;
