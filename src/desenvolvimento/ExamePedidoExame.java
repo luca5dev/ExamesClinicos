@@ -112,5 +112,24 @@ public class ExamePedidoExame {
 
         System.out.println("Valor: "+ this.getValor());
     }
+    public void imprimir(){
+        SimpleDateFormat formataData = new SimpleDateFormat("dd/MM/yyyy");
+        String dataRealizarExame = formataData.format(this.getDataRealizacaoExame());
+        System.out.println("Data do Exame: "+dataRealizarExame);
+
+        SimpleDateFormat formataHora = new SimpleDateFormat("HH:mm");
+        String horaRealizarExame = formataHora.format(this.getHoraRealizacaoExame());
+        System.out.println("Hora do Exame: "+ horaRealizarExame);
+
+        String dataRetirarExame = formataData.format(this.getDataPronto());
+        System.out.println("Data da retirada do exame: "+dataRetirarExame);
+
+        String horaRetirarExame = formataHora.format(this.getHoraPronto());
+        System.out.println("Hora da retirada do exame: "+horaRetirarExame);
+
+        for (int i = 0; i < contPexe; i++) {
+            System.out.println(pexe[i].getExamePedido().getDescricao());
+        }
+    }
 
 }

@@ -82,7 +82,7 @@ public class Paciente {
     public void setCidade(Cidade cidade) {
         this.cidade = cidade;
     }
-    public void Cadastrar() throws ParseException{
+    public void cadastrar() throws ParseException{
         Scanner tec = new Scanner(System.in);
         System.out.println("Informe os dados do Paciente");
         System.out.println("Nome: ");

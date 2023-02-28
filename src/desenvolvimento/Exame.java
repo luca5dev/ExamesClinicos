@@ -8,8 +8,7 @@ public class Exame {
     private int codigo;
     private String Descricao, procedimentos;
     private double valor;
-    private GrupoExame grupoExame = new GrupoExame;
-
+    private GrupoExame grupoExame = new GrupoExame();
     public int getCodigo() {
         return codigo;
     }
